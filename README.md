@@ -12,7 +12,7 @@ Analysis of warehouse inventory patterns to optimize stock levels and reduce car
 - Seasonal trends (41% winter sales dominance)
 - Product bundling opportunities (r >0.8)
 
-![Seasonal Sales Distribution](reports/figures/seasonal_sales.png)
+![Sales_Transactions_Dataset_Weekly.csv](https://archive.ics.uci.edu/dataset/396/sales+transactions+dataset+weekly)
 
 ## 📁 Dataset
 `Sales_Transactions_Dataset_Weekly.csv`  
