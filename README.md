@@ -12,9 +12,11 @@ Analysis of warehouse inventory patterns to optimize stock levels and reduce car
 - Seasonal trends (41% winter sales dominance)
 - Product bundling opportunities (r >0.8)
 
-![Sales_Transactions_Dataset_Weekly.csv](https://archive.ics.uci.edu/dataset/396/sales+transactions+dataset+weekly)
+
 
 ## 📁 Dataset
+[Sales_Transactions_Dataset_Weekly.csv](https://archive.ics.uci.edu/dataset/396/sales+transactions+dataset+weekly)
+
 `Sales_Transactions_Dataset_Weekly.csv`  
 - 811 products with 52-week sales history
 - Columns: `Product_Code`, `W0-W51`, Normalized features
