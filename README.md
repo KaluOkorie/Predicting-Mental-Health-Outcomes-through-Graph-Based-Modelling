@@ -33,12 +33,11 @@ The models were trained on a graph constructed from the [Social Media and Mental
 - **Ethical Framework**: Considerations for responsible AI in mental health applications
 
   
-## Key Results
-📊 Key Results
-Model	Accuracy	Precision	Recall	F1-Score
-GraphSAGE	96.8%	96.9%	96.8%	96.8%
-GAT	46.4%	55.2%	46.4%	42.7%
-GCN	46.0%	43.6%	46.0%	44.0%
+## Key Results 📊
+- Model	Accuracy	Precision	Recall	F1-Score
+- GraphSAGE	96.8%	96.9%	96.8%	96.8%
+- GAT	46.4%	55.2%	46.4%	42.7%
+- GCN	46.0%	43.6%	46.0%	44.0%
 
 - **GraphSAGE** significantly outperformed the other models, achieving **96.8% accuracy** in classifying depression severity.
 - **GCN** and **GAT** showed lower performance (around 46% accuracy), highlighting the importance of the aggregation method in GNNs.
