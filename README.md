@@ -62,6 +62,6 @@ The project requires Python 3.7+ and the following libraries:
    git clone https://github.com/yourusername/mental-health-gnn.git
    cd mental-health-gnn
 
-📚 Citation
+- 📚 Citation
 If this work inspires your research, please cite
 Okorie, I. K. (2025). Predicting Mental Health Outcomes through Graph-Based Modelling. MSc Dissertation, University of Salford. *uploading link soon*
