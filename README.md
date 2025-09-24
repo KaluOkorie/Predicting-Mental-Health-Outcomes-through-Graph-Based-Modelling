@@ -1,38 +1,38 @@
-# Warehouse-Inventory-Optimization---EDA
-Warehouse inventory analysis identifying demand patterns, seasonal trends, and product correlations. Contains Python EDA, Jupyter notebooks, and actionable insights for inventory optimization.  🔑 Keywords: inventory optimization, sales analysis, demand forecasting, Python EDA
+# Predicting Mental Health Outcomes through Graph-Based Modelling
 
-# Warehouse Inventory Optimization - EDA
+## Overview
+This repository contains documentation for my MSc Data Science dissertation project at the University of Salford. The project explores the application of Graph Neural Networks (GNNs) to predict mental health outcomes, specifically depression severity, by modelling individuals and their attributes as a graph.
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Motivation
+Mental health disorders, such as depression, are complex and influenced by a network of factors. Traditional machine learning models often treat these factors in isolation, missing the relational context. This project investigates whether graph-based models can capture these intricate relationships to improve prediction and provide deeper insights.
 
-## 🔍 Project Overview
-Analysis of warehouse inventory patterns to optimize stock levels and reduce carrying costs. Identifies:
-- High-risk SKUs with demand variability (CV >7)
-- Seasonal trends (41% winter sales dominance)
-- Product bundling opportunities (r >0.8)
+## Methods
+I implemented three state-of-the-art GNN architectures:
+- **Graph Convolutional Network (GCN)**
+- **Graph Attention Network (GAT)**
+- **GraphSAGE**
 
+The models were trained on a graph constructed from the [Social Media and Mental Health dataset](https://www.kaggle.com/datasets/souvikahmed071/social-media-and-mental-health) from Kaggle. The graph nodes represent individuals, and edges are based on feature similarity. The project followed the CRISP-DM methodology and used PyTorch Geometric for model implementation.
 
+## Key Results
+- **GraphSAGE** significantly outperformed the other models, achieving **96.8% accuracy** in classifying depression severity.
+- **GCN** and **GAT** showed lower performance (around 46% accuracy), highlighting the importance of the aggregation method in GNNs.
+- The success of GraphSAGE suggests that inductive learning and neighborhood aggregation are particularly effective for this type of data.
 
-## 📁 Dataset
-[Sales_Transactions_Dataset_Weekly.csv](https://archive.ics.uci.edu/dataset/396/sales+transactions+dataset+weekly)
+## Installation and Usage
+### Dependencies
+The project requires Python 3.7+ and the following libraries:
+- torch
+- torch-geometric
+- scikit-learn
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- imblearn
 
-`Sales_Transactions_Dataset_Weekly.csv`  
-- 811 products with 52-week sales history
-- Columns: `Product_Code`, `W0-W51`, Normalized features
-
-## 🚀 Key Findings
-1. **Critical Stock Risks**: 15% of SKUs show extreme demand variability (CV >5)
-2. **Winter Focus**: 41% of annual sales occur December-February
-3. **Top Correlations**: P215-P457 (r=0.81) ideal for bundling
-
-## ⚙️ Usage
-```bash
-# Clone repo
-git clone https://github.com/KaluOkorie/Warehouse-Inventory-Optimization.git
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run analysis
-jupyter notebook notebooks/02_eda_analysis.ipynb
+### Running the Code
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/mental-health-gnn.git
+   cd mental-health-gnn
